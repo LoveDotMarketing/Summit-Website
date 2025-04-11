@@ -102,7 +102,7 @@ export default function Registration() {
 
                 <Button
                   className={`w-full py-6 h-auto text-lg font-medium ${option.highlighted ? "bg-[#20BF55] hover:bg-[#1ca348] text-white" : "bg-[#0B4F6C] hover:bg-[#0a4559] text-white"}`}
-                  onClick={() => (window.location.href = "/register")}
+                  onClick={() => (window.location.href = "/registration")}
                 >
                   Register Now
                 </Button>

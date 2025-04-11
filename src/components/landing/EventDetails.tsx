@@ -36,7 +36,7 @@ export default function EventDetails() {
                     Dates
                   </h3>
                   <p className="text-gray-600 font-['Inter']">
-                    June 15-17, 2025
+                    September 2nd - 5th, 2025
                   </p>
                 </div>
               </div>
@@ -67,7 +67,7 @@ export default function EventDetails() {
                     Location
                   </h3>
                   <p className="text-gray-600 font-['Inter']">
-                    Moscone Center, San Francisco, CA
+                    575 Hyatt Lost Pines Rd, Cedar Creek, TX 78612
                   </p>
                 </div>
               </div>
@@ -100,7 +100,7 @@ export default function EventDetails() {
 
             <Button
               className="bg-[#20BF55] hover:bg-[#1ca348] text-white px-8 py-6 h-auto text-lg font-medium"
-              onClick={() => (window.location.href = "/register")}
+              onClick={() => (window.location.href = "/registration")}
             >
               Register Now
             </Button>

@@ -60,7 +60,7 @@ export default function Header() {
       </div>
       <Button
         className="bg-[#20BF55] hover:bg-[#1ca348] text-white"
-        onClick={() => (window.location.href = "/register")}
+        onClick={() => (window.location.href = "/registration")}
       >
         Register Now
       </Button>

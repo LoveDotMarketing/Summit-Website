@@ -107,6 +107,12 @@ export default function Speakers() {
             <SpeakerCard key={speaker.id} speaker={speaker} />
           ))}
         </div>
+
+        <div className="mt-12 text-center">
+          <button className="px-8 py-3 bg-[#01BAEF] hover:bg-[#01BAEF]/90 text-white font-medium rounded-md transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg font-['Inter']">
+            See All Speakers
+          </button>
+        </div>
       </div>
     </section>
   );

@@ -16,7 +16,7 @@ interface Day {
 
 const agenda: Day[] = [
   {
-    date: "June 15, 2025",
+    date: "September 3rd, 2025",
     sessions: [
       {
         id: 1,
@@ -52,7 +52,7 @@ const agenda: Day[] = [
     ],
   },
   {
-    date: "June 16, 2025",
+    date: "September 4th, 2025",
     sessions: [
       {
         id: 5,
@@ -89,7 +89,7 @@ const agenda: Day[] = [
     ],
   },
   {
-    date: "June 17, 2025",
+    date: "September 5th, 2025",
     sessions: [
       {
         id: 9,
@@ -224,6 +224,15 @@ export default function Agenda() {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="flex justify-center mt-12">
+          <button
+            className="px-8 py-3 bg-[#01BAEF] text-white rounded-md font-medium transition-all hover:bg-[#0B4F6C] hover:shadow-lg font-['Inter']"
+            onClick={() => {}}
+          >
+            View Full Agenda
+          </button>
         </div>
       </div>
     </section>

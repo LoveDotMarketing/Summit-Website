@@ -10,6 +10,7 @@ import Sponsors from "./Sponsors";
 import Registration from "./Registration";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import VenueTravel from "./VenueTravel";
 
 export default function LandingPage() {
   return (
@@ -18,11 +19,12 @@ export default function LandingPage() {
       <Hero />
       <EventDetails />
       <AppBanner />
-      <KeyTopics />
-      <Speakers />
-      <Agenda />
       <WhyAttend />
+      <Agenda />
+      <Speakers />
       <Sponsors />
+      <VenueTravel />
+      <KeyTopics />
       <Registration />
       <Contact />
       <Footer />

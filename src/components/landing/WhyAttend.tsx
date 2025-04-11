@@ -5,7 +5,7 @@ export default function WhyAttend() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B4F6C] mb-6 font-['Roboto']">
-              Why Attend
+              Why Attend?
             </h2>
             <p className="text-lg text-gray-700 mb-8 font-['Inter']">
               The FEOYCS Summit 2025 brings together IT professionals,
@@ -33,11 +33,10 @@ export default function WhyAttend() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-[#0B4F6C] mb-2 font-['Roboto']">
-                    Network with Industry Leaders
+                    Networking Opportunities
                   </h3>
                   <p className="text-gray-600 font-['Inter']">
-                    Connect with decision-makers, innovators, and peers from
-                    government agencies and leading enterprises.
+                    Connect with government officials & industry leaders.
                   </p>
                 </div>
               </div>
@@ -61,11 +60,10 @@ export default function WhyAttend() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-[#0B4F6C] mb-2 font-['Roboto']">
-                    Gain Actionable Insights
+                    Innovation Sessions
                   </h3>
                   <p className="text-gray-600 font-['Inter']">
-                    Learn practical strategies and solutions you can implement
-                    immediately in your organization.
+                    Learn about cutting-edge strategies in VA contracting.
                   </p>
                 </div>
               </div>
@@ -89,11 +87,10 @@ export default function WhyAttend() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-[#0B4F6C] mb-2 font-['Roboto']">
-                    Stay Ahead of Regulations
+                    Expert Panels
                   </h3>
                   <p className="text-gray-600 font-['Inter']">
-                    Navigate complex regulatory requirements with expert
-                    guidance on compliance strategies.
+                    Gain insights from top industry professionals.
                   </p>
                 </div>
               </div>
@@ -117,11 +114,10 @@ export default function WhyAttend() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-[#0B4F6C] mb-2 font-['Roboto']">
-                    Explore Emerging Technologies
+                    Collaboration Hub
                   </h3>
                   <p className="text-gray-600 font-['Inter']">
-                    Get hands-on experience with cutting-edge AI, machine
-                    learning, and automation solutions.
+                    Work together on actionable solutions.
                   </p>
                 </div>
               </div>

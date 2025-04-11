@@ -92,7 +92,7 @@ export default function Sponsors() {
             href="/sponsorship"
             className="inline-block px-6 py-3 bg-[#01BAEF] hover:bg-[#01a7d6] text-white font-medium rounded-md transition-colors"
           >
-            View Sponsorship Opportunities
+            Become A Sponsor
           </a>
         </div>
       </div>
