@@ -2,21 +2,19 @@ import { Button } from "@/components/ui/button";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0B4F6C] text-white py-16 px-6">
+    <footer className="bg-deep-space text-starlight py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
-            <h2 className="text-2xl font-bold mb-4 font-['Roboto']">
-              FEOYCS Summit 2025
-            </h2>
-            <p className="text-white/80 mb-6 max-w-md font-['Inter']">
+            <h2 className="text-2xl font-bold mb-4">FEOYCS SUMMIT 2025</h2>
+            <p className="text-starlight/80 mb-6 max-w-md">
               The premier conference for content management and digital strategy
               professionals.
             </p>
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="text-white hover:text-[#01BAEF] transition-colors"
+                className="text-starlight hover:text-gold-dust transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +33,7 @@ export default function Footer() {
               </a>
               <a
                 href="#"
-                className="text-white hover:text-[#01BAEF] transition-colors"
+                className="text-starlight hover:text-gold-dust transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +54,7 @@ export default function Footer() {
               </a>
               <a
                 href="#"
-                className="text-white hover:text-[#01BAEF] transition-colors"
+                className="text-starlight hover:text-gold-dust transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -79,46 +77,44 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-4 font-['Roboto']">
-              Quick Links
-            </h3>
-            <ul className="space-y-2 font-['Inter']">
+            <h3 className="text-lg font-bold mb-4">QUICK LINKS</h3>
+            <ul className="space-y-2">
               <li>
                 <a
                   href="/#"
-                  className="text-white/80 hover:text-white transition-colors"
+                  className="text-starlight/80 hover:text-gold-dust transition-colors"
                 >
                   About
                 </a>
               </li>
               <li>
                 <a
-                  href="/#speakers"
-                  className="text-white/80 hover:text-white transition-colors"
+                  href="/speakers"
+                  className="text-starlight/80 hover:text-gold-dust transition-colors"
                 >
                   Speakers
                 </a>
               </li>
               <li>
                 <a
-                  href="/#agenda"
-                  className="text-white/80 hover:text-white transition-colors"
+                  href="/agenda"
+                  className="text-starlight/80 hover:text-gold-dust transition-colors"
                 >
                   Agenda
                 </a>
               </li>
               <li>
                 <a
-                  href="/#venue"
-                  className="text-white/80 hover:text-white transition-colors"
+                  href="/venue"
+                  className="text-starlight/80 hover:text-gold-dust transition-colors"
                 >
                   Venue
                 </a>
               </li>
               <li>
                 <a
-                  href="/#sponsors"
-                  className="text-white/80 hover:text-white transition-colors"
+                  href="/sponsorship"
+                  className="text-starlight/80 hover:text-gold-dust transition-colors"
                 >
                   Sponsors
                 </a>
@@ -126,7 +122,7 @@ export default function Footer() {
               <li>
                 <a
                   href="/contact"
-                  className="text-white/80 hover:text-white transition-colors"
+                  className="text-starlight/80 hover:text-gold-dust transition-colors"
                 >
                   Contact
                 </a>
@@ -135,8 +131,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-4 font-['Roboto']">Contact</h3>
-            <ul className="space-y-2 font-['Inter']">
+            <h3 className="text-lg font-bold mb-4">CONTACT</h3>
+            <ul className="space-y-2">
               <li className="flex items-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -194,26 +190,26 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/60 text-sm mb-4 md:mb-0 font-['Inter']">
+        <div className="mt-16 pt-8 border-t border-cosmic-blue/20 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-starlight/60 text-sm mb-4 md:mb-0">
             © 2025 FEOYCS Summit. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a
               href="#"
-              className="text-white/60 hover:text-white text-sm transition-colors font-['Inter']"
+              className="text-starlight/60 hover:text-gold-dust text-sm transition-colors"
             >
               Privacy Policy
             </a>
             <a
               href="#"
-              className="text-white/60 hover:text-white text-sm transition-colors font-['Inter']"
+              className="text-starlight/60 hover:text-gold-dust text-sm transition-colors"
             >
               Terms of Service
             </a>
             <a
               href="#"
-              className="text-white/60 hover:text-white text-sm transition-colors font-['Inter']"
+              className="text-starlight/60 hover:text-gold-dust text-sm transition-colors"
             >
               Code of Conduct
             </a>

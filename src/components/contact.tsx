@@ -4,9 +4,9 @@ import Footer from "./landing/Footer";
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-nebula">
       <Header />
-      <div className="pt-24">
+      <div className="pt-24 bg-nebula">
         <Contact />
       </div>
       <Footer />

@@ -4,13 +4,13 @@ import { Textarea } from "@/components/ui/textarea";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 px-6 bg-white">
+    <section id="contact" className="py-20 px-6 bg-nebula">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0B4F6C] mb-4 font-['Roboto']">
-            Contact Us
+          <h2 className="text-3xl md:text-4xl font-bold text-gold-dust mb-4">
+            CONTACT US
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto font-['Inter']">
+          <p className="text-lg text-starlight max-w-3xl mx-auto">
             Have questions about the FEOYCS Summit 2025? We're here to help!
           </p>
         </div>
@@ -22,28 +22,28 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium text-gray-700 mb-1 font-['Inter']"
+                    className="block text-sm font-medium text-starlight mb-1"
                   >
-                    Name
+                    NAME
                   </label>
                   <Input
                     id="name"
                     placeholder="Your name"
-                    className="w-full p-3 border border-gray-300 rounded-md"
+                    className="w-full p-3 border border-cosmic-blue bg-nebula text-starlight rounded-md"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-gray-700 mb-1 font-['Inter']"
+                    className="block text-sm font-medium text-starlight mb-1"
                   >
-                    Email
+                    EMAIL
                   </label>
                   <Input
                     id="email"
                     type="email"
                     placeholder="Your email"
-                    className="w-full p-3 border border-gray-300 rounded-md"
+                    className="w-full p-3 border border-cosmic-blue bg-nebula text-starlight rounded-md"
                   />
                 </div>
               </div>
@@ -51,48 +51,48 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="subject"
-                  className="block text-sm font-medium text-gray-700 mb-1 font-['Inter']"
+                  className="block text-sm font-medium text-starlight mb-1"
                 >
-                  Subject
+                  SUBJECT
                 </label>
                 <Input
                   id="subject"
                   placeholder="Subject"
-                  className="w-full p-3 border border-gray-300 rounded-md"
+                  className="w-full p-3 border border-cosmic-blue bg-nebula text-starlight rounded-md"
                 />
               </div>
 
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-gray-700 mb-1 font-['Inter']"
+                  className="block text-sm font-medium text-starlight mb-1"
                 >
-                  Message
+                  MESSAGE
                 </label>
                 <Textarea
                   id="message"
                   placeholder="Your message"
-                  className="w-full p-3 border border-gray-300 rounded-md min-h-[150px]"
+                  className="w-full p-3 border border-cosmic-blue bg-nebula text-starlight rounded-md min-h-[150px]"
                 />
               </div>
 
-              <Button className="bg-[#20BF55] hover:bg-[#1ca348] text-white px-8 py-6 h-auto text-lg font-medium w-full md:w-auto">
-                Send Message
+              <Button className="bg-rocket-red hover:bg-gold-dust hover:text-deep-space text-starlight px-8 py-6 h-auto text-lg font-medium w-full md:w-auto">
+                SEND MESSAGE
               </Button>
             </form>
           </div>
 
-          <div className="bg-gray-50 p-8 rounded-xl">
-            <h3 className="text-2xl font-bold text-[#0B4F6C] mb-6 font-['Roboto']">
-              Get in Touch
+          <div className="bg-cosmic-blue p-8 rounded-xl">
+            <h3 className="text-2xl font-bold text-gold-dust mb-6">
+              GET IN TOUCH
             </h3>
 
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#01BAEF]/10 flex items-center justify-center mr-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gold-dust/20 flex items-center justify-center mr-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-[#01BAEF]"
+                    className="h-6 w-6 text-gold-dust"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -106,23 +106,19 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-[#0B4F6C] mb-1 font-['Roboto']">
-                    Email
+                  <h4 className="text-lg font-bold text-gold-dust mb-1">
+                    EMAIL
                   </h4>
-                  <p className="text-gray-600 font-['Inter']">
-                    info@feoycs2025.com
-                  </p>
-                  <p className="text-gray-600 font-['Inter']">
-                    sponsorship@feoycs2025.com
-                  </p>
+                  <p className="text-starlight">info@feoycs2025.com</p>
+                  <p className="text-starlight">sponsorship@feoycs2025.com</p>
                 </div>
               </div>
 
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#01BAEF]/10 flex items-center justify-center mr-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gold-dust/20 flex items-center justify-center mr-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-[#01BAEF]"
+                    className="h-6 w-6 text-gold-dust"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -136,23 +132,19 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-[#0B4F6C] mb-1 font-['Roboto']">
-                    Phone
+                  <h4 className="text-lg font-bold text-gold-dust mb-1">
+                    PHONE
                   </h4>
-                  <p className="text-gray-600 font-['Inter']">
-                    +1 (555) 123-4567
-                  </p>
-                  <p className="text-gray-600 font-['Inter']">
-                    +1 (555) 987-6543
-                  </p>
+                  <p className="text-starlight">+1 (555) 123-4567</p>
+                  <p className="text-starlight">+1 (555) 987-6543</p>
                 </div>
               </div>
 
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#01BAEF]/10 flex items-center justify-center mr-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gold-dust/20 flex items-center justify-center mr-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-[#01BAEF]"
+                    className="h-6 w-6 text-gold-dust"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -172,23 +164,23 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-[#0B4F6C] mb-1 font-['Roboto']">
-                    Location
+                  <h4 className="text-lg font-bold text-gold-dust mb-1">
+                    LOCATION
                   </h4>
-                  <p className="text-gray-600 font-['Inter']">
+                  <p className="text-starlight">
                     Hyatt Regency Lost Pines Resort and Spa
                   </p>
-                  <p className="text-gray-600 font-['Inter']">
+                  <p className="text-starlight">
                     575 Hyatt Lost Pines Rd, Cedar Creek, TX 78612
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#01BAEF]/10 flex items-center justify-center mr-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gold-dust/20 flex items-center justify-center mr-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-[#01BAEF]"
+                    className="h-6 w-6 text-gold-dust"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -202,15 +194,11 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-[#0B4F6C] mb-1 font-['Roboto']">
-                    Conference Hours
+                  <h4 className="text-lg font-bold text-gold-dust mb-1">
+                    CONFERENCE HOURS
                   </h4>
-                  <p className="text-gray-600 font-['Inter']">
-                    June 15-17, 2025
-                  </p>
-                  <p className="text-gray-600 font-['Inter']">
-                    9:00 AM - 5:00 PM (Daily)
-                  </p>
+                  <p className="text-starlight">June 15-17, 2025</p>
+                  <p className="text-starlight">9:00 AM - 5:00 PM (Daily)</p>
                 </div>
               </div>
             </div>

@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -51,6 +51,19 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // New color palette
+        starlight: "#D7DDE5",
+        nebula: "#0A0E1A",
+        lunar: "#BCC1C8",
+        "gold-dust": "#FFD700",
+        "deep-space": "#000000",
+        "cosmic-blue": "#22396C",
+        "rocket-red": "#FF4C4C",
+      },
+      fontFamily: {
+        orbitron: ["Orbitron", "sans-serif"],
+        rajdhani: ["Rajdhani", "sans-serif"],
+        titillium: ["Titillium Web", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -74,4 +87,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

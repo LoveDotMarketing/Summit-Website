@@ -4,9 +4,9 @@ import SponsorshipOpportunities from "./landing/SponsorshipOpportunities";
 
 export default function SponsorshipPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-nebula">
       <Header />
-      <div className="pt-24">
+      <div className="pt-24 bg-nebula">
         <SponsorshipOpportunities />
       </div>
       <Footer />

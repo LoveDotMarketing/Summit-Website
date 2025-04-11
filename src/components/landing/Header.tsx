@@ -1,14 +1,19 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { useLocation } from "react-router-dom";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
+
+    // Set initial scroll state
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -18,51 +23,52 @@ export default function Header() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6 flex items-center justify-between",
-        scrolled ? "bg-background shadow-md" : "bg-transparent",
+        "bg-nebula",
+        scrolled ? "shadow-md" : "",
       )}
     >
       <div className="flex items-center">
-        <a href="/" className="text-2xl font-bold text-primary mr-8">
+        <a href="/" className="text-2xl font-bold text-gold-dust mr-8">
           FEOYCS 2025
         </a>
         <nav className="hidden md:flex space-x-6">
           <a
-            href="/#speakers"
-            className="text-foreground hover:text-primary transition-colors"
+            href="/speakers"
+            className="text-starlight hover:text-gold-dust transition-colors"
           >
-            Speakers
+            SPEAKERS
           </a>
           <a
-            href="/#agenda"
-            className="text-foreground hover:text-primary transition-colors"
+            href="/agenda"
+            className="text-starlight hover:text-gold-dust transition-colors"
           >
-            Agenda
+            AGENDA
           </a>
           <a
-            href="/#venue"
-            className="text-foreground hover:text-primary transition-colors"
+            href="/venue"
+            className="text-starlight hover:text-gold-dust transition-colors"
           >
-            Venue
+            VENUE
           </a>
           <a
-            href="/#sponsors"
-            className="text-foreground hover:text-primary transition-colors"
+            href="/sponsorship"
+            className="text-starlight hover:text-gold-dust transition-colors"
           >
-            Sponsors
+            SPONSORS
           </a>
           <a
             href="/contact"
-            className="text-foreground hover:text-primary transition-colors"
+            className="text-starlight hover:text-gold-dust transition-colors"
           >
-            Contact
+            CONTACT
           </a>
         </nav>
       </div>
       <Button
-        className="bg-[#20BF55] hover:bg-[#1ca348] text-white"
+        className="bg-rocket-red hover:bg-gold-dust hover:text-deep-space text-starlight"
         onClick={() => (window.location.href = "/registration")}
       >
-        Register Now
+        REGISTER NOW
       </Button>
     </header>
   );

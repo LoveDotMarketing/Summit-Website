@@ -129,13 +129,13 @@ export default function KeyTopics() {
   ];
 
   return (
-    <section id="topics" className="py-20 px-6 bg-gray-50">
+    <section id="topics" className="py-20 px-6 bg-nebula">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0B4F6C] mb-4 font-['Roboto']">
-            Key Topics
+          <h2 className="text-3xl md:text-4xl font-bold text-gold-dust mb-4">
+            KEY TOPICS
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto font-['Inter']">
+          <p className="text-lg text-starlight max-w-3xl mx-auto">
             Explore cutting-edge themes and technologies shaping the future of
             digital content management
           </p>
@@ -145,15 +145,13 @@ export default function KeyTopics() {
           {topics.map((topic, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100"
+              className="bg-cosmic-blue p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-lunar/30"
             >
-              <div className="text-[#01BAEF] mb-4">{topic.icon}</div>
-              <h3 className="text-xl font-bold text-[#0B4F6C] mb-3 font-['Roboto']">
+              <div className="text-gold-dust mb-4">{topic.icon}</div>
+              <h3 className="text-xl font-bold text-gold-dust mb-3">
                 {topic.title}
               </h3>
-              <p className="text-gray-600 font-['Inter']">
-                {topic.description}
-              </p>
+              <p className="text-starlight">{topic.description}</p>
             </div>
           ))}
         </div>

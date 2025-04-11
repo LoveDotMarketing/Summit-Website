@@ -1,13 +1,13 @@
 export default function WhyAttend() {
   return (
-    <section id="why-attend" className="py-20 px-6 bg-white">
+    <section id="why-attend" className="py-20 px-6 bg-nebula">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0B4F6C] mb-6 font-['Roboto']">
-              Why Attend?
+            <h2 className="text-3xl md:text-4xl font-bold text-gold-dust mb-6">
+              WHY ATTEND?
             </h2>
-            <p className="text-lg text-gray-700 mb-8 font-['Inter']">
+            <p className="text-lg text-starlight mb-8">
               The FEOYCS Summit 2025 brings together IT professionals,
               government officials, and industry leaders focused on digital
               transformation and content management innovation.
@@ -15,10 +15,10 @@ export default function WhyAttend() {
 
             <div className="space-y-6">
               <div className="flex">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#01BAEF]/10 flex items-center justify-center mr-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gold-dust/20 flex items-center justify-center mr-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-[#01BAEF]"
+                    className="h-6 w-6 text-gold-dust"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -32,20 +32,20 @@ export default function WhyAttend() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[#0B4F6C] mb-2 font-['Roboto']">
-                    Networking Opportunities
+                  <h3 className="text-xl font-bold text-gold-dust mb-2">
+                    NETWORKING OPPORTUNITIES
                   </h3>
-                  <p className="text-gray-600 font-['Inter']">
+                  <p className="text-starlight">
                     Connect with government officials & industry leaders.
                   </p>
                 </div>
               </div>
 
               <div className="flex">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#01BAEF]/10 flex items-center justify-center mr-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gold-dust/20 flex items-center justify-center mr-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-[#01BAEF]"
+                    className="h-6 w-6 text-gold-dust"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -59,20 +59,20 @@ export default function WhyAttend() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[#0B4F6C] mb-2 font-['Roboto']">
-                    Innovation Sessions
+                  <h3 className="text-xl font-bold text-gold-dust mb-2">
+                    INNOVATION SESSIONS
                   </h3>
-                  <p className="text-gray-600 font-['Inter']">
+                  <p className="text-starlight">
                     Learn about cutting-edge strategies in VA contracting.
                   </p>
                 </div>
               </div>
 
               <div className="flex">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#01BAEF]/10 flex items-center justify-center mr-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gold-dust/20 flex items-center justify-center mr-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-[#01BAEF]"
+                    className="h-6 w-6 text-gold-dust"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -86,20 +86,20 @@ export default function WhyAttend() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[#0B4F6C] mb-2 font-['Roboto']">
-                    Expert Panels
+                  <h3 className="text-xl font-bold text-gold-dust mb-2">
+                    EXPERT PANELS
                   </h3>
-                  <p className="text-gray-600 font-['Inter']">
+                  <p className="text-starlight">
                     Gain insights from top industry professionals.
                   </p>
                 </div>
               </div>
 
               <div className="flex">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#01BAEF]/10 flex items-center justify-center mr-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gold-dust/20 flex items-center justify-center mr-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-[#01BAEF]"
+                    className="h-6 w-6 text-gold-dust"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -113,10 +113,10 @@ export default function WhyAttend() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[#0B4F6C] mb-2 font-['Roboto']">
-                    Collaboration Hub
+                  <h3 className="text-xl font-bold text-gold-dust mb-2">
+                    COLLABORATION HUB
                   </h3>
-                  <p className="text-gray-600 font-['Inter']">
+                  <p className="text-starlight">
                     Work together on actionable solutions.
                   </p>
                 </div>
@@ -125,8 +125,8 @@ export default function WhyAttend() {
           </div>
 
           <div className="relative">
-            <div className="absolute -top-6 -left-6 w-64 h-64 bg-[#01BAEF]/10 rounded-lg"></div>
-            <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-[#20BF55]/10 rounded-lg"></div>
+            <div className="absolute -top-6 -left-6 w-64 h-64 bg-cosmic-blue/50 rounded-lg"></div>
+            <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-gold-dust/20 rounded-lg"></div>
             <img
               src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
               alt="Digital CMC Summit networking and collaboration among content management professionals"

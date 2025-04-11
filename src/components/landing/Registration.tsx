@@ -42,16 +42,13 @@ export default function Registration() {
   ];
 
   return (
-    <section
-      id="registration"
-      className="py-20 px-6 bg-gradient-to-br from-[#0B4F6C] to-[#01BAEF]"
-    >
+    <section id="registration" className="py-20 px-6 bg-cosmic-blue">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-['Roboto']">
-            Registration
+          <h2 className="text-3xl md:text-4xl font-bold text-gold-dust mb-4">
+            REGISTRATION
           </h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto font-['Inter']">
+          <p className="text-xl text-starlight max-w-3xl mx-auto">
             Secure your spot at the premier digital content management
             conference of 2025
           </p>
@@ -61,27 +58,25 @@ export default function Registration() {
           {pricingOptions.map((option, index) => (
             <div
               key={index}
-              className={`rounded-xl overflow-hidden ${option.highlighted ? "ring-4 ring-[#20BF55] transform scale-105" : ""}`}
+              className={`rounded-xl overflow-hidden ${option.highlighted ? "ring-4 ring-gold-dust transform scale-105" : ""}`}
             >
               <div
-                className={`p-8 ${option.highlighted ? "bg-white" : "bg-white/95"}`}
+                className={`p-8 ${option.highlighted ? "bg-nebula" : "bg-nebula/95"}`}
               >
-                <h3 className="text-2xl font-bold text-[#0B4F6C] mb-2 font-['Roboto']">
+                <h3 className="text-2xl font-bold text-gold-dust mb-2">
                   {option.name}
                 </h3>
-                <div className="text-3xl font-bold text-[#01BAEF] mb-2">
+                <div className="text-3xl font-bold text-rocket-red mb-2">
                   {option.price}
                 </div>
-                <p className="text-gray-600 mb-6 font-['Inter']">
-                  {option.description}
-                </p>
+                <p className="text-starlight mb-6">{option.description}</p>
 
                 <ul className="space-y-3 mb-8">
                   {option.features.map((feature, i) => (
                     <li key={i} className="flex items-start">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-[#20BF55] mr-2 mt-0.5"
+                        className="h-5 w-5 text-gold-dust mr-2 mt-0.5"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -93,15 +88,13 @@ export default function Registration() {
                           d="M5 13l4 4L19 7"
                         />
                       </svg>
-                      <span className="text-gray-700 font-['Inter']">
-                        {feature}
-                      </span>
+                      <span className="text-starlight">{feature}</span>
                     </li>
                   ))}
                 </ul>
 
                 <Button
-                  className={`w-full py-6 h-auto text-lg font-medium ${option.highlighted ? "bg-[#20BF55] hover:bg-[#1ca348] text-white" : "bg-[#0B4F6C] hover:bg-[#0a4559] text-white"}`}
+                  className={`w-full py-6 h-auto text-lg font-medium ${option.highlighted ? "bg-rocket-red hover:bg-gold-dust hover:text-deep-space text-starlight" : "bg-cosmic-blue hover:bg-gold-dust hover:text-deep-space text-starlight"}`}
                   onClick={() => (window.location.href = "/registration")}
                 >
                   Register Now
@@ -111,30 +104,30 @@ export default function Registration() {
           ))}
         </div>
 
-        <div className="mt-16 text-center text-white">
-          <p className="mb-4 font-['Inter']">
+        <div className="mt-16 text-center text-starlight">
+          <p className="mb-4">
             Group discounts available for teams of 3 or more
           </p>
           <a
             href="#"
-            className="text-white underline hover:text-[#20BF55] transition-colors font-['Inter']"
+            className="text-starlight underline hover:text-gold-dust transition-colors"
           >
             Contact us for group registration
           </a>
         </div>
 
-        <div className="mt-20 bg-white rounded-xl p-8 md:p-12 text-center shadow-lg">
-          <h3 className="text-2xl md:text-3xl font-bold text-[#0B4F6C] mb-4 font-['Roboto']">
-            Interested in Sponsorship Opportunities?
+        <div className="mt-20 bg-nebula rounded-xl p-8 md:p-12 text-center shadow-lg border border-lunar/30">
+          <h3 className="text-2xl md:text-3xl font-bold text-gold-dust mb-4">
+            INTERESTED IN SPONSORSHIP OPPORTUNITIES?
           </h3>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto font-['Inter']">
+          <p className="text-lg text-starlight mb-8 max-w-2xl mx-auto">
             Showcase your brand to industry leaders and decision-makers in
             digital content management. Various sponsorship packages are
             available to meet your marketing objectives.
           </p>
           <Button
             size="lg"
-            className="bg-[#01BAEF] hover:bg-[#01a7d6] text-white text-lg px-8 py-6 h-auto font-medium"
+            className="bg-cosmic-blue hover:bg-gold-dust hover:text-deep-space text-starlight text-lg px-8 py-6 h-auto font-medium"
             onClick={() => (window.location.href = "/sponsorship")}
           >
             View Sponsorship Opportunities

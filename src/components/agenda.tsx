@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { Link } from "react-router-dom";
+import Header from "./landing/Header";
+import Footer from "./landing/Footer";
 
 interface Session {
   id: number;
@@ -128,7 +129,7 @@ const agenda: Day[] = [
   },
 ];
 
-export default function Agenda() {
+export default function AgendaPage() {
   const [activeDay, setActiveDay] = useState(0);
   const [expandedSession, setExpandedSession] = useState<number | null>(null);
 
@@ -141,98 +142,98 @@ export default function Agenda() {
   };
 
   return (
-    <section id="agenda" className="py-20 px-6 bg-nebula">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gold-dust mb-4">
-            CONFERENCE AGENDA
-          </h2>
-          <p className="text-lg text-starlight max-w-3xl mx-auto">
-            Three days of inspiring talks, workshops, and networking
-            opportunities
-          </p>
-        </div>
+    <div className="bg-nebula min-h-screen">
+      <Header />
+      <div className="pt-24">
+        <section className="py-20 px-6 bg-nebula">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gold-dust mb-4">
+                CONFERENCE AGENDA
+              </h2>
+              <p className="text-lg text-starlight max-w-3xl mx-auto">
+                Three days of inspiring talks, workshops, and networking
+                opportunities
+              </p>
+            </div>
 
-        <div className="flex justify-center mb-12 border-b border-cosmic-blue">
-          {agenda.map((day, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveDay(index)}
-              className={cn(
-                "px-6 py-3 font-medium text-lg transition-colors relative",
-                activeDay === index
-                  ? "text-gold-dust border-b-2 border-gold-dust"
-                  : "text-lunar hover:text-gold-dust",
-              )}
-            >
-              {day.date}
-            </button>
-          ))}
-        </div>
+            <div className="flex justify-center mb-12 border-b border-cosmic-blue">
+              {agenda.map((day, index) => (
+                <button
+                  key={index}
+                  onClick={() => setActiveDay(index)}
+                  className={cn(
+                    "px-6 py-3 font-medium text-lg transition-colors relative",
+                    activeDay === index
+                      ? "text-gold-dust border-b-2 border-gold-dust"
+                      : "text-lunar hover:text-gold-dust",
+                  )}
+                >
+                  {day.date}
+                </button>
+              ))}
+            </div>
 
-        <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-0 md:left-1/4 top-0 bottom-0 w-px bg-cosmic-blue ml-6 md:ml-0"></div>
+            <div className="relative">
+              {/* Timeline line */}
+              <div className="absolute left-0 md:left-1/4 top-0 bottom-0 w-px bg-cosmic-blue ml-6 md:ml-0"></div>
 
-          <div className="space-y-8">
-            {agenda[activeDay].sessions.map((session) => (
-              <div key={session.id} className="relative">
-                <div className="flex flex-col md:flex-row">
-                  {/* Time and circle */}
-                  <div className="md:w-1/4 mb-4 md:mb-0 flex">
-                    <div className="relative z-10 w-12 h-12 rounded-full bg-cosmic-blue flex items-center justify-center text-starlight font-bold ml-0 md:-ml-6">
-                      {session.id}
-                    </div>
-                    <div className="ml-4 md:ml-6">
-                      <p className="font-bold text-gold-dust">{session.time}</p>
-                    </div>
-                  </div>
-
-                  {/* Session content */}
-                  <div className="md:w-3/4 pl-12 md:pl-0">
-                    <div
-                      className={cn(
-                        "bg-cosmic-blue border border-lunar/30 rounded-lg p-6 shadow-sm hover:shadow-md transition-all cursor-pointer",
-                        expandedSession === session.id ? "shadow-md" : "",
-                      )}
-                      onClick={() => toggleSession(session.id)}
-                    >
-                      <h3 className="text-xl font-bold text-gold-dust mb-2">
-                        {session.title}
-                      </h3>
-                      {session.speaker && (
-                        <p className="text-starlight font-medium mb-2">
-                          {session.speaker}
-                        </p>
-                      )}
-
-                      {expandedSession === session.id && (
-                        <div className="mt-4 text-lunar">
-                          <p>{session.description}</p>
+              <div className="space-y-8">
+                {agenda[activeDay].sessions.map((session) => (
+                  <div key={session.id} className="relative">
+                    <div className="flex flex-col md:flex-row">
+                      {/* Time and circle */}
+                      <div className="md:w-1/4 mb-4 md:mb-0 flex">
+                        <div className="relative z-10 w-12 h-12 rounded-full bg-cosmic-blue flex items-center justify-center text-starlight font-bold ml-0 md:-ml-6">
+                          {session.id}
                         </div>
-                      )}
+                        <div className="ml-4 md:ml-6">
+                          <p className="font-bold text-gold-dust">
+                            {session.time}
+                          </p>
+                        </div>
+                      </div>
 
-                      <div className="mt-2 text-sm text-rocket-red font-medium">
-                        {expandedSession === session.id
-                          ? "Click to collapse"
-                          : "Click for details"}
+                      {/* Session content */}
+                      <div className="md:w-3/4 pl-12 md:pl-0">
+                        <div
+                          className={cn(
+                            "bg-cosmic-blue border border-lunar/30 rounded-lg p-6 shadow-sm hover:shadow-md transition-all cursor-pointer",
+                            expandedSession === session.id ? "shadow-md" : "",
+                          )}
+                          onClick={() => toggleSession(session.id)}
+                        >
+                          <h3 className="text-xl font-bold text-gold-dust mb-2">
+                            {session.title}
+                          </h3>
+                          {session.speaker && (
+                            <p className="text-starlight font-medium mb-2">
+                              {session.speaker}
+                            </p>
+                          )}
+
+                          {expandedSession === session.id && (
+                            <div className="mt-4 text-lunar">
+                              <p>{session.description}</p>
+                            </div>
+                          )}
+
+                          <div className="mt-2 text-sm text-rocket-red font-medium">
+                            {expandedSession === session.id
+                              ? "Click to collapse"
+                              : "Click for details"}
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
-        </div>
-
-        <div className="flex justify-center mt-12">
-          <Link to="/agenda">
-            <button className="px-8 py-3 bg-cosmic-blue text-starlight rounded-md font-medium transition-all hover:bg-gold-dust hover:text-deep-space hover:shadow-lg">
-              VIEW FULL AGENDA
-            </button>
-          </Link>
-        </div>
+        </section>
       </div>
-    </section>
+      <Footer />
+    </div>
   );
 }

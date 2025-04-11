@@ -2,14 +2,14 @@ import { Button } from "@/components/ui/button";
 
 export default function EventDetails() {
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="py-20 px-6 bg-nebula">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0B4F6C] mb-6 font-['Roboto']">
-              Event Details
+            <h2 className="text-3xl md:text-4xl font-bold text-gold-dust mb-6">
+              EVENT DETAILS
             </h2>
-            <p className="text-lg text-gray-700 mb-6 font-['Inter']">
+            <p className="text-lg text-starlight mb-6">
               Join us for three days of insightful discussions, hands-on
               workshops, and networking opportunities focused on digital
               innovation in content management and compliance.
@@ -19,7 +19,7 @@ export default function EventDetails() {
               <div className="flex items-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-[#01BAEF] mr-3 mt-1"
+                  className="h-6 w-6 text-gold-dust mr-3 mt-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -32,19 +32,15 @@ export default function EventDetails() {
                   />
                 </svg>
                 <div>
-                  <h3 className="font-bold text-[#0B4F6C] font-['Roboto']">
-                    Dates
-                  </h3>
-                  <p className="text-gray-600 font-['Inter']">
-                    September 2nd - 5th, 2025
-                  </p>
+                  <h3 className="font-bold text-gold-dust">DATES</h3>
+                  <p className="text-starlight">September 2nd - 5th, 2025</p>
                 </div>
               </div>
 
               <div className="flex items-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-[#01BAEF] mr-3 mt-1"
+                  className="h-6 w-6 text-gold-dust mr-3 mt-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -63,10 +59,8 @@ export default function EventDetails() {
                   />
                 </svg>
                 <div>
-                  <h3 className="font-bold text-[#0B4F6C] font-['Roboto']">
-                    Location
-                  </h3>
-                  <p className="text-gray-600 font-['Inter']">
+                  <h3 className="font-bold text-gold-dust">LOCATION</h3>
+                  <p className="text-starlight">
                     575 Hyatt Lost Pines Rd, Cedar Creek, TX 78612
                   </p>
                 </div>
@@ -75,7 +69,7 @@ export default function EventDetails() {
               <div className="flex items-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-[#01BAEF] mr-3 mt-1"
+                  className="h-6 w-6 text-gold-dust mr-3 mt-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -88,33 +82,29 @@ export default function EventDetails() {
                   />
                 </svg>
                 <div>
-                  <h3 className="font-bold text-[#0B4F6C] font-['Roboto']">
-                    Schedule
-                  </h3>
-                  <p className="text-gray-600 font-['Inter']">
-                    9:00 AM - 5:00 PM (Daily)
-                  </p>
+                  <h3 className="font-bold text-gold-dust">SCHEDULE</h3>
+                  <p className="text-starlight">9:00 AM - 5:00 PM (Daily)</p>
                 </div>
               </div>
             </div>
 
             <Button
-              className="bg-[#20BF55] hover:bg-[#1ca348] text-white px-8 py-6 h-auto text-lg font-medium"
+              className="bg-rocket-red hover:bg-gold-dust hover:text-deep-space text-starlight px-8 py-6 h-auto text-lg font-medium"
               onClick={() => (window.location.href = "/registration")}
             >
-              Register Now
+              REGISTER NOW
             </Button>
           </div>
 
-          <div className="bg-gradient-to-br from-[#0B4F6C]/10 to-[#01BAEF]/10 p-8 rounded-xl">
-            <h3 className="text-2xl font-bold text-[#0B4F6C] mb-4 font-['Roboto']">
-              What to Expect
+          <div className="bg-cosmic-blue p-8 rounded-xl">
+            <h3 className="text-2xl font-bold text-gold-dust mb-4">
+              WHAT TO EXPECT
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-[#20BF55] mr-3 mt-1"
+                  className="h-6 w-6 text-gold-dust mr-3 mt-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -126,14 +116,14 @@ export default function EventDetails() {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <p className="text-gray-700 font-['Inter']">
+                <p className="text-starlight">
                   Expert-led sessions on digital transformation strategies
                 </p>
               </li>
               <li className="flex items-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-[#20BF55] mr-3 mt-1"
+                  className="h-6 w-6 text-gold-dust mr-3 mt-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -145,14 +135,14 @@ export default function EventDetails() {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <p className="text-gray-700 font-['Inter']">
+                <p className="text-starlight">
                   Hands-on workshops with cutting-edge technologies
                 </p>
               </li>
               <li className="flex items-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-[#20BF55] mr-3 mt-1"
+                  className="h-6 w-6 text-gold-dust mr-3 mt-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -164,14 +154,14 @@ export default function EventDetails() {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <p className="text-gray-700 font-['Inter']">
+                <p className="text-starlight">
                   Networking opportunities with industry leaders
                 </p>
               </li>
               <li className="flex items-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-[#20BF55] mr-3 mt-1"
+                  className="h-6 w-6 text-gold-dust mr-3 mt-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -183,14 +173,14 @@ export default function EventDetails() {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <p className="text-gray-700 font-['Inter']">
+                <p className="text-starlight">
                   Exclusive insights on AI and machine learning applications
                 </p>
               </li>
               <li className="flex items-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-[#20BF55] mr-3 mt-1"
+                  className="h-6 w-6 text-gold-dust mr-3 mt-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -202,7 +192,7 @@ export default function EventDetails() {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <p className="text-gray-700 font-['Inter']">
+                <p className="text-starlight">
                   Access to the latest research and case studies
                 </p>
               </li>

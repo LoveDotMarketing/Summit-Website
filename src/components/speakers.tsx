@@ -1,4 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Header from "./landing/Header";
+import Footer from "./landing/Footer";
 
 interface Speaker {
   id: number;
@@ -65,6 +67,34 @@ const speakers: Speaker[] = [
     company: "CloudScale Systems",
     image: "https://api.dicebear.com/7.x/avataaars/svg?seed=robert",
   },
+  {
+    id: 9,
+    name: "Olivia Taylor",
+    title: "Digital Marketing Strategist",
+    company: "Engage Digital",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=olivia",
+  },
+  {
+    id: 10,
+    name: "Daniel Lee",
+    title: "Product Innovation Lead",
+    company: "NextGen Solutions",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=daniel",
+  },
+  {
+    id: 11,
+    name: "Priya Sharma",
+    title: "Content Strategy Director",
+    company: "Global Content Partners",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=priya",
+  },
+  {
+    id: 12,
+    name: "Thomas Wright",
+    title: "VP of Technology",
+    company: "TechForward Inc.",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=thomas",
+  },
 ];
 
 function SpeakerCard({ speaker }: { speaker: Speaker }) {
@@ -84,34 +114,30 @@ function SpeakerCard({ speaker }: { speaker: Speaker }) {
   );
 }
 
-export default function Speakers() {
+export default function SpeakersPage() {
   return (
-    <section id="speakers" className="py-20 px-6 bg-nebula">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gold-dust mb-4">
-            FEATURED SPEAKERS
-          </h2>
-          <p className="text-lg text-starlight max-w-3xl mx-auto">
-            Learn from industry experts and thought leaders who are shaping the
-            future of digital content management
-          </p>
-        </div>
+    <div className="min-h-screen bg-nebula">
+      <Header />
+      <main className="pt-24 pb-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-gold-dust mb-4">
+              OUR SPEAKERS
+            </h1>
+            <p className="text-lg text-starlight max-w-3xl mx-auto">
+              Meet the industry experts and thought leaders who will be sharing
+              their knowledge and insights at FEOYCS Summit 2025
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {speakers.map((speaker) => (
-            <SpeakerCard key={speaker.id} speaker={speaker} />
-          ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {speakers.map((speaker) => (
+              <SpeakerCard key={speaker.id} speaker={speaker} />
+            ))}
+          </div>
         </div>
-
-        <div className="mt-12 text-center">
-          <a href="/speakers">
-            <button className="px-8 py-3 bg-cosmic-blue hover:bg-gold-dust hover:text-deep-space text-starlight font-medium rounded-md transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
-              SEE ALL SPEAKERS
-            </button>
-          </a>
-        </div>
-      </div>
-    </section>
+      </main>
+      <Footer />
+    </div>
   );
 }
